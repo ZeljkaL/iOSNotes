@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		CDBFC00D2C946C180068F381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC00C2C946C180068F381 /* AppDelegate.swift */; };
 		CDBFC00F2C946C180068F381 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC00E2C946C180068F381 /* SceneDelegate.swift */; };
-		CDBFC0112C946C180068F381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0102C946C180068F381 /* ViewController.swift */; };
+		CDBFC0112C946C180068F381 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0102C946C180068F381 /* NoteDetailVC.swift */; };
 		CDBFC0142C946C180068F381 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CDBFC0132C946C180068F381 /* Base */; };
 		CDBFC0172C946C180068F381 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0152C946C180068F381 /* Notes.xcdatamodeld */; };
 		CDBFC0192C946C190068F381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFC0182C946C190068F381 /* Assets.xcassets */; };
 		CDBFC01C2C946C190068F381 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CDBFC01B2C946C190068F381 /* Base */; };
+		CDBFC0242C94705C0068F381 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0232C94705C0068F381 /* NoteCell.swift */; };
+		CDBFC0262C94706A0068F381 /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0252C94706A0068F381 /* NoteTableView.swift */; };
+		CDBFC0282C94722A0068F381 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0272C94722A0068F381 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CDBFC0092C946C180068F381 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBFC00C2C946C180068F381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDBFC00E2C946C180068F381 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CDBFC0102C946C180068F381 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDBFC0102C946C180068F381 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
 		CDBFC0132C946C180068F381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDBFC0162C946C180068F381 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		CDBFC0182C946C190068F381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBFC01B2C946C190068F381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDBFC01D2C946C190068F381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBFC0232C94705C0068F381 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		CDBFC0252C94706A0068F381 /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
+		CDBFC0272C94722A0068F381 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				CDBFC00C2C946C180068F381 /* AppDelegate.swift */,
 				CDBFC00E2C946C180068F381 /* SceneDelegate.swift */,
-				CDBFC0102C946C180068F381 /* ViewController.swift */,
+				CDBFC0102C946C180068F381 /* NoteDetailVC.swift */,
 				CDBFC0122C946C180068F381 /* Main.storyboard */,
+				CDBFC0232C94705C0068F381 /* NoteCell.swift */,
+				CDBFC0252C94706A0068F381 /* NoteTableView.swift */,
 				CDBFC0182C946C190068F381 /* Assets.xcassets */,
 				CDBFC01A2C946C190068F381 /* LaunchScreen.storyboard */,
 				CDBFC01D2C946C190068F381 /* Info.plist */,
 				CDBFC0152C946C180068F381 /* Notes.xcdatamodeld */,
+				CDBFC0272C94722A0068F381 /* Note.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -141,8 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBFC0112C946C180068F381 /* ViewController.swift in Sources */,
+				CDBFC0112C946C180068F381 /* NoteDetailVC.swift in Sources */,
+				CDBFC0262C94706A0068F381 /* NoteTableView.swift in Sources */,
+				CDBFC0282C94722A0068F381 /* Note.swift in Sources */,
 				CDBFC00D2C946C180068F381 /* AppDelegate.swift in Sources */,
+				CDBFC0242C94705C0068F381 /* NoteCell.swift in Sources */,
 				CDBFC00F2C946C180068F381 /* SceneDelegate.swift in Sources */,
 				CDBFC0172C946C180068F381 /* Notes.xcdatamodeld in Sources */,
 			);

@@ -159,6 +159,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brc-ae-tpV">
+                                <rect key="frame" x="296.66666666666669" y="283" width="50" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1Gh-Lj-iua"/>
+                                    <constraint firstAttribute="width" constant="50" id="abc-ZR-Nun"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="photo" catalog="system"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onPhotoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="93r-Id-7RO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -172,7 +186,9 @@
                             <constraint firstItem="gIG-na-Gy7" firstAttribute="top" secondItem="vgB-dW-hwQ" secondAttribute="top" constant="30" id="T6P-97-NK3"/>
                             <constraint firstItem="dpX-xs-oxk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XTM-eK-zHc"/>
                             <constraint firstItem="gIG-na-Gy7" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="fzz-wr-NaC"/>
+                            <constraint firstItem="brc-ae-tpV" firstAttribute="trailing" secondItem="dpX-xs-oxk" secondAttribute="trailing" id="gu2-Jb-yBA"/>
                             <constraint firstItem="Uw7-8Q-Xtt" firstAttribute="top" secondItem="gIG-na-Gy7" secondAttribute="top" constant="100" id="ilo-5M-nNS"/>
+                            <constraint firstItem="brc-ae-tpV" firstAttribute="centerY" secondItem="Uw7-8Q-Xtt" secondAttribute="centerY" id="imJ-qM-Bg7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pkA-Wr-xMY">
@@ -202,6 +218,7 @@
         <segue reference="f1b-QR-0Ey"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -210,10 +227,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

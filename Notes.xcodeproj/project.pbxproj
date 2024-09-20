@@ -17,6 +17,7 @@
 		CDBFC0242C94705C0068F381 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0232C94705C0068F381 /* NoteCell.swift */; };
 		CDBFC0262C94706A0068F381 /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0252C94706A0068F381 /* NoteTableView.swift */; };
 		CDBFC0282C94722A0068F381 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFC0272C94722A0068F381 /* Note.swift */; };
+		CDDC9E6E2C9DCC3500A7262E /* OCRProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC9E6D2C9DCC3500A7262E /* OCRProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CDBFC0232C94705C0068F381 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		CDBFC0252C94706A0068F381 /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
 		CDBFC0272C94722A0068F381 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CDDC9E6D2C9DCC3500A7262E /* OCRProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				CDBFC01D2C946C190068F381 /* Info.plist */,
 				CDBFC0152C946C180068F381 /* Notes.xcdatamodeld */,
 				CDBFC0272C94722A0068F381 /* Note.swift */,
+				CDDC9E6D2C9DCC3500A7262E /* OCRProcessor.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDBFC0112C946C180068F381 /* NoteDetailVC.swift in Sources */,
+				CDDC9E6E2C9DCC3500A7262E /* OCRProcessor.swift in Sources */,
 				CDBFC0262C94706A0068F381 /* NoteTableView.swift in Sources */,
 				CDBFC0282C94722A0068F381 /* Note.swift in Sources */,
 				CDBFC00D2C946C180068F381 /* AppDelegate.swift in Sources */,

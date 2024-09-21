@@ -14,6 +14,4 @@ class Note: NSManagedObject {
     @NSManaged var title: String!
     @NSManaged var desc: String!
     @NSManaged var deletedDate: Date?
-    
-    
 }

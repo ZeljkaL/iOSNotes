@@ -244,6 +244,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="deleteButton" destination="M8T-lz-XNx" id="2JF-42-NyP"/>
                         <outlet property="descTV" destination="dpX-xs-oxk" id="FGy-o5-g4L"/>
                         <outlet property="titleTF" destination="gIG-na-Gy7" id="A9M-qO-cL6"/>
                     </connections>

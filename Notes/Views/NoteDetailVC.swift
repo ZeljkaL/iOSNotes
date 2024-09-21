@@ -6,7 +6,8 @@ class NoteDetailVC: UIViewController,
     
     @IBOutlet weak var titleTF: UITextField!
     @IBOutlet weak var descTV: UITextView!
-    
+    @IBOutlet weak var deleteButton: UIButton!
+
     public var selectedNote: Note?
 
     private let imagePicker = UIImagePickerController()
@@ -16,6 +17,7 @@ class NoteDetailVC: UIViewController,
         super.viewDidLoad()
         
         imagePicker.delegate = self
+        deleteButton.isHidden = selectedNote == nil
         
         guard let note = selectedNote else {
             print(">>> [NoteDetailVC] No selected note provided.")
@@ -78,6 +80,6 @@ class NoteDetailVC: UIViewController,
         }
 
         // Append recognized text to the description text view
-        self.descTV.text += "\n\(recognizedText)"
+        self.descTV.text += "\(recognizedText)"
     }
 }
